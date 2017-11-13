@@ -6,3 +6,5 @@
   hosts: '{{ target }}'
   tags:
     - docker
+  roles:
+    - ansible-docker
