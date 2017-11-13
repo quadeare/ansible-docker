@@ -2,6 +2,7 @@
 
 - import_tasks: debian.yml
   name: Example playbook
+  remote_user: root
   when: "ansible_distribution == 'Debian'"
   hosts: '{{ target }}'
   tags:
