@@ -1,6 +1,7 @@
 ---
 
 - import_tasks: debian.yml
+  name: Example playbook
   when: "ansible_distribution == 'Debian'"
   hosts: '{{ target }}'
   tags:
