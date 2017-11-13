@@ -2,5 +2,6 @@
 
 - import_tasks: debian.yml
   when: "ansible_distribution == 'Debian'"
+  hosts: '{{ target }}'
   tags:
     - docker
